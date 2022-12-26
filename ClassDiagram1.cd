@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProductWarehouse.ViewModels.BaseVM">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductWarehouse.ViewModels.DataManage" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>S2AMo9g1HbPQc1ETd8tbV7aJaLRwAfWrPorVNbKQWQQ=</HashCode>
+      <FileName>ViewModels\DataManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.ViewModels.UsersDataManageVM" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEBAAAkCAAsAAUASggRAEAAAAAAAECACAQAAAAEAA=</HashCode>
+      <FileName>ViewModels\UsersDataManageVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Admin">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Client">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Employee">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAEAAAAAAAAAgAAAAAAACAAAA=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.User" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAAAAQAAAAAAAAAgCAAAQAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Dairy">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Models\Dairy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Fish">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Fruit">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Fruit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Meat">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Meat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Vegetables">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Vegetables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Product" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAgAAAAAAAAAAAAAAAASAAAAAABAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.DataProducts">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataProducts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.Logs">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAIAAAAAAAAAAAAAAAAEAACAAgAA=</HashCode>
+      <FileName>Models\Logs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Models.ReservationProduct">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAQAACAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\ReservationProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProductWarehouse.Extentions.ActionCommand">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extentions\ActionCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProductWarehouse.Extentions.Extentions">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Extentions\Extentions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

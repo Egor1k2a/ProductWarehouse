@@ -1,0 +1,148 @@
+﻿<Window x:Class="ProductWarehouse.Views.ProductsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductWarehouse.Views" 
+        xmlns:viewModel="clr-namespace:ProductWarehouse.ViewModels"
+        mc:Ignorable="d"
+        Title="Products" Height="600" Width="1030"
+        Name="ProductsWnd">
+    <Window.Resources>
+        <viewModel:DataManage x:Key="viewModelSourse"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Source="{StaticResource viewModelSourse}"/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0" SelectedItem="{Binding SelectedTabItem}">
+            <TabItem Name="MeatTab">
+                <TabItem.Header>
+                    <TextBlock Text="Мясные продукты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditProductWnd}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteProductCommand}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllMeat" ItemsSource="{Binding Meat}" SelectedItem="{Binding SelectedMeat}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Path=NameOfProduct}"/>
+                            <GridViewColumn Header="Цена за кг" DisplayMemberBinding="{Binding Path=PricePerKilogram}"/>
+                            <GridViewColumn Header="Всего кг" DisplayMemberBinding="{Binding Path=TotalKilogram}"/>
+                            <GridViewColumn Header="Тип мяса" DisplayMemberBinding="{Binding Path=MeatType}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="FishTab">
+                <TabItem.Header>
+                    <TextBlock Text="Рыбные продукты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditProductWnd}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteProductCommand}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllFishes" ItemsSource="{Binding Fishes}" SelectedItem="{Binding SelectedFish}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Path=NameOfProduct}"/>
+                            <GridViewColumn Header="Цена за кг" DisplayMemberBinding="{Binding Path=PricePerKilogram}"/>
+                            <GridViewColumn Header="Всего кг" DisplayMemberBinding="{Binding Path=TotalKilogram}"/>
+                            <GridViewColumn Header="Тип рыбы" DisplayMemberBinding="{Binding Path=FishType}"/>
+                            <GridViewColumn Header="Живая\Неживая" DisplayMemberBinding="{Binding Path=FishCondition}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="DairyTab">
+                <TabItem.Header>
+                    <TextBlock Text="Молочные продукты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditProductWnd}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteProductCommand}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllDairies" ItemsSource="{Binding Dairies}" SelectedItem="{Binding SelectedDairy}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Path=NameOfProduct}"/>
+                            <GridViewColumn Header="Цена за кг" DisplayMemberBinding="{Binding Path=PricePerKilogram}"/>
+                            <GridViewColumn Header="Всего кг" DisplayMemberBinding="{Binding Path=TotalKilogram}"/>
+                            <GridViewColumn Header="Кол-во упаковок" DisplayMemberBinding="{Binding Path=NumberOfPackages}"/>
+                            <GridViewColumn Header="Цена за упаковку" DisplayMemberBinding="{Binding Path=PricePerPack}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="FruitTab">
+                <TabItem.Header>
+                    <TextBlock Text="Фрукты"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditProductWnd}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteProductCommand}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllFruit" ItemsSource="{Binding Fruit}" SelectedItem="{Binding SelectedFruit}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Path=NameOfProduct}"/>
+                            <GridViewColumn Header="Цена за кг" DisplayMemberBinding="{Binding Path=PricePerKilogram}"/>
+                            <GridViewColumn Header="Всего кг" DisplayMemberBinding="{Binding Path=TotalKilogram}"/>
+                            <GridViewColumn Header="Месяц сбора" DisplayMemberBinding="{Binding Path=CollectionDay}"/>
+                            <GridViewColumn Header="День сбора" DisplayMemberBinding="{Binding Path=CollectionMonth}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="VegetablesTab">
+                <TabItem.Header>
+                    <TextBlock Text="Овощи"/>
+                </TabItem.Header>
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditProductWnd}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeleteProductCommand}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllVegetables" ItemsSource="{Binding Vegetables}" SelectedItem="{Binding SelectedVegetables}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Path=NameOfProduct}"/>
+                            <GridViewColumn Header="Цена за кг" DisplayMemberBinding="{Binding Path=PricePerKilogram}"/>
+                            <GridViewColumn Header="Всего кг" DisplayMemberBinding="{Binding Path=TotalKilogram}"/>
+                            <GridViewColumn Header="Месяц сбора" DisplayMemberBinding="{Binding Path=CollectionDay}"/>
+                            <GridViewColumn Header="День сбора" DisplayMemberBinding="{Binding Path=CollectionMonth}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Выход" Command="{Binding CloseUserInterface}" CommandParameter="{Binding ElementName=ProductsWnd}" Margin="0 0 5 0"/>
+            <Button Content="Новый мясной продукт" Command="{Binding OpenAddNewMeatWnd}" Margin="0 0 5 0"/>
+            <Button Content="Новый рыбный продукт" Command="{Binding OpenAddNewFishWnd}" Margin="0 0 5 0"/>
+            <Button Content="Новый молочный продукт" Command="{Binding OpenAddNewDairyWnd}" Margin="0 0 5 0"/>
+            <Button Content="Новый фрукт" Command="{Binding OpenAddNewFruitWnd}" Margin="0 0 5 0"/>
+            <Button Content="Новый овощ" Command="{Binding OpenAddNewVegetablesWnd}" Margin="0 0 5 0"/>
+            <Button Content="Заказы" Command="{Binding OpenAcknowledgmentOrdersWindow}" CommandParameter="{Binding ElementName=ProductsWnd}" Margin="0 0 5 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
